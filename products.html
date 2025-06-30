@@ -27,125 +27,436 @@
         </div>
     </nav>
 
-    <section class="page-header">
+    <section class="page-header" style="background: linear-gradient(rgba(45, 80, 22, 0.8), rgba(45, 80, 22, 0.8)), url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=1600&q=80') center/cover;">
         <div class="container">
-            <h1>Our Products</h1>
+            <h1>NARSING Products</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9; margin-top: 1rem;">Comprehensive Nutrition & Veterinary Solutions</p>
         </div>
     </section>
 
     <section class="content-section">
         <div class="container">
-            <h2>NARSING Product Catalog</h2>
-            <div class="notice-box">
-                <p><strong>Note:</strong> Online store coming soon. Currently, please use the "Get a Quote" button to inquire about products.</p>
+            <div class="product-intro">
+                <p style="font-size: 1.1rem; line-height: 1.8; text-align: center; max-width: 1000px; margin: 0 auto 3rem;">
+                    Discover NARSING's BIS-compliant, world-class feed formulations and veterinary solutions, crafted with advanced biotechnology and DDGS-based ingredients. Developed using National Research Council (NRC) and Cornell Net Carbohydrate and Protein System (CNCPS) guidelines, our products optimize animal health, fertility, productivity, and disease resistance.
+                </p>
             </div>
             
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1564410267841-915d8e4d71ea?w=800&q=80" alt="NARSING Jersey Heifer Feed">
-                    <div class="product-info">
-                        <h3>NARSING Jersey Heifer Feed</h3>
-                        <p>Premium biotech-formulated feed specifically designed for Jersey heifers. Contains 50% protein, 4.5% fat for optimal growth and development.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+            <div class="notice-box" style="margin-bottom: 3rem;">
+                <p><strong>Note:</strong> Online store coming soon. Currently, please use the "Get a Quote" button to inquire about products.</p>
+            </div>
+
+            <!-- Product Categories Navigation -->
+            <div class="product-categories">
+                <button class="category-btn active" data-category="cattle">
+                    <i class="fas fa-cow"></i>
+                    <span>Cattle Nutrition</span>
+                </button>
+                <button class="category-btn" data-category="buffalo">
+                    <i class="fas fa-horse"></i>
+                    <span>Buffalo Nutrition</span>
+                </button>
+                <button class="category-btn" data-category="goat">
+                    <i class="fas fa-sheep"></i>
+                    <span>Goat Nutrition</span>
+                </button>
+                <button class="category-btn" data-category="poultry">
+                    <i class="fas fa-egg"></i>
+                    <span>Poultry Nutrition</span>
+                </button>
+                <button class="category-btn" data-category="veterinary">
+                    <i class="fas fa-syringe"></i>
+                    <span>Veterinary Medicine</span>
+                </button>
+            </div>
+
+            <!-- Cattle Products -->
+            <div class="product-category" id="cattle">
+                <h2 class="category-title">Cattle Nutrition & Supplements</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1564410267841-915d8e4d71ea?w=800&q=80" alt="NARSING Jersey Heifer Feed">
+                        <div class="product-info">
+                            <span class="product-badge">BIS Type I</span>
+                            <h3>NARSING Jersey Heifer Feed</h3>
+                            <p class="product-description">DDGS-based feed for Jersey heifers, promoting growth and reproductive readiness.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-percentage"></i> 18% CP, 70% TDN</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 1.5-2.5 kg DM/100kg BW</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Muscle and tissue development</li>
+                                <li>Balanced energy nutrition</li>
+                                <li>Enhanced immunity and bone health</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&q=80" alt="NARSING Holstein Friesian Heifer Feed">
+                        <div class="product-info">
+                            <span class="product-badge">BIS Type I</span>
+                            <h3>NARSING Holstein Friesian Heifer Feed</h3>
+                            <p class="product-description">DDGS-based feed for Holstein Friesian heifers, supporting robust growth.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-percentage"></i> 17% CP, 70% TDN</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 1.5-2.5 kg DM/100kg BW</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Lean growth promotion</li>
+                                <li>Prevents over-conditioning</li>
+                                <li>Zinc & selenium for reproductive health</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1593126925230-5c95dc60ba03?w=800&q=80" alt="NARSING Lactating Cow Feed (1-5L)">
+                        <div class="product-info">
+                            <span class="product-badge">BIS Type II</span>
+                            <h3>NARSING Lactating Cow Feed (1-5L)</h3>
+                            <p class="product-description">Optimized for Jersey/Holstein cows producing 1-5 liters daily.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-percentage"></i> 16% CP, 65% TDN</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 10-12 kg DM for 550kg cow</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Maintenance and low milk yield support</li>
+                                <li>Energy balance optimization</li>
+                                <li>High RDP for microbial synthesis</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1595433562696-a9b475c23fb7?w=800&q=80" alt="NARSING Lactating Cow Feed (5-10L)">
+                        <div class="product-info">
+                            <span class="product-badge">BIS Type II</span>
+                            <h3>NARSING Lactating Cow Feed (5-10L)</h3>
+                            <p class="product-description">High-performance feed for cows producing 5-10 liters daily.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-percentage"></i> 17% CP, 65% TDN</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 12-14 kg DM for 550kg cow</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Lysine:methionine ratio (~3:1)</li>
+                                <li>Rumen-protected amino acids</li>
+                                <li>Supports increased milk yield</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80" alt="NARSING Lactating Cow Feed (10-20L)">
+                        <div class="product-info">
+                            <span class="product-badge">BIS Type I</span>
+                            <h3>NARSING Lactating Cow Feed (10-20L)</h3>
+                            <p class="product-description">High-energy feed for cows producing 10-20 liters daily.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-percentage"></i> 18% CP, 70% TDN</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 14-16 kg DM for 550kg cow</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>28-30% NDF for rumen health</li>
+                                <li>Supports milk fat (3.5-4%)</li>
+                                <li>Optimizes milk protein (3.2-3.5%)</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=800&q=80" alt="NARSING Premium Lactating Cow Feed (20L+)">
+                        <div class="product-info">
+                            <span class="product-badge">Premium BIS Type I</span>
+                            <h3>NARSING Premium Lactating Cow Feed (20L+)</h3>
+                            <p class="product-description">Premium feed for high-yielding cows producing over 20 liters daily.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-percentage"></i> 19% CP, 70% TDN</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 16-18 kg DM for 550kg cow</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Optimized RUP content</li>
+                                <li>Maximum milk production support</li>
+                                <li>Enhanced udder health</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?w=800&q=80" alt="NARSING Cattle Fertility Enhancer">
+                        <div class="product-info">
+                            <span class="product-badge">Supplement</span>
+                            <h3>NARSING Cattle Fertility Enhancer</h3>
+                            <p class="product-description">DDGS-based supplement to boost reproductive performance.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-pills"></i> Omega-3 & Vitamin E</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 0.2-0.5 kg daily</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Hormonal balance support</li>
+                                <li>Enhanced ovulation</li>
+                                <li>Improved pregnancy rates</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80" alt="NARSING Cattle Mineral Mixture">
+                        <div class="product-info">
+                            <span class="product-badge">BIS IS 1664:2002</span>
+                            <h3>NARSING Cattle Mineral Mixture</h3>
+                            <p class="product-description">Comprehensive mineral supplement addressing deficiencies.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-atom"></i> 20% Ca, 12% P</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 50-100 g daily</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Improves bone health</li>
+                                <li>Enhances milk production</li>
+                                <li>Reduces hypocalcaemia risk</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&q=80" alt="NARSING Holstein Friesian Heifer Feed">
-                    <div class="product-info">
-                        <h3>NARSING Holstein Friesian Heifer Feed</h3>
-                        <p>Specially formulated for Holstein Friesian heifers with balanced nutrition for healthy growth and future milk production.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+            <!-- Buffalo Products -->
+            <div class="product-category" id="buffalo" style="display: none;">
+                <h2 class="category-title">Buffalo Nutrition & Supplements</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&q=80" alt="NARSING Murrah Milk Booster">
+                        <div class="product-info">
+                            <span class="product-badge">BIS Type I</span>
+                            <h3>NARSING Murrah Milk Booster Supplement</h3>
+                            <p class="product-description">DDGS-based supplement for Murrah buffaloes to enhance milk yield.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-percentage"></i> 20% CP, 70% TDN</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 0.5-1 kg daily</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Bypass protein for milk production</li>
+                                <li>Improves milk fat (6-7%)</li>
+                                <li>Enhanced solids-not-fat (SNF)</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1552228369-35f9d8fa5371?w=800&q=80" alt="NARSING Jaffrabadi Buffalo Feed">
+                        <div class="product-info">
+                            <span class="product-badge">BIS Type I</span>
+                            <h3>NARSING Jaffrabadi Buffalo Special Feed</h3>
+                            <p class="product-description">Tailored DDGS-based feed for Jaffrabadi buffaloes.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-percentage"></i> 18% CP, 70% TDN</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 10-12 kg DM for 650kg</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>30% NDF for rumen health</li>
+                                <li>Minerals for bone health</li>
+                                <li>Udder health support</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1573341830496-e0b659545af8?w=800&q=80" alt="NARSING Buffalo Fertility">
+                        <div class="product-info">
+                            <span class="product-badge">Supplement</span>
+                            <h3>NARSING Buffalo Fertility Enhancer</h3>
+                            <p class="product-description">Improves reproductive efficiency in Murrah and Jaffrabadi buffaloes.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-pills"></i> Vitamin E (1000 IU/kg)</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 0.2-0.5 kg daily</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Estrus regularity support</li>
+                                <li>Enhanced embryo development</li>
+                                <li>Reduces silent heat</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1593126925230-5c95dc60ba03?w=800&q=80" alt="NARSING Lactating Cow Feed (1-5L)">
-                    <div class="product-info">
-                        <h3>NARSING Lactating Cow Feed (1-5L)</h3>
-                        <p>Optimized feed for cows producing 1-5 liters of milk daily, ensuring sustained production and health.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+            <!-- Goat Products -->
+            <div class="product-category" id="goat" style="display: none;">
+                <h2 class="category-title">Goat Nutrition & Supplements</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1524024973431-2ad916746881?w=800&q=80" alt="NARSING Goat Feed">
+                        <div class="product-info">
+                            <span class="product-badge">BIS Type I</span>
+                            <h3>NARSING Goat Meat & Marbling Feed</h3>
+                            <p class="product-description">DDGS-based feed to enhance weight gain and meat quality.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-percentage"></i> 16% CP, 75% TDN</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 0.7-1 kg DM per 25-50kg</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Enhanced muscle growth</li>
+                                <li>Improved marbling score</li>
+                                <li>Premium meat quality</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=800&q=80" alt="NARSING Goat Fertility">
+                        <div class="product-info">
+                            <span class="product-badge">Supplement</span>
+                            <h3>NARSING Goat Fertility Enhancer</h3>
+                            <p class="product-description">Boosts reproductive performance and kidding rates.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-pills"></i> Vitamin E & Selenium</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 50-100 g daily</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Hormonal balance support</li>
+                                <li>Enhanced ovulation</li>
+                                <li>Improved litter size</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1595433562696-a9b475c23fb7?w=800&q=80" alt="NARSING Lactating Cow Feed (5-10L)">
-                    <div class="product-info">
-                        <h3>NARSING Lactating Cow Feed (5-10L)</h3>
-                        <p>Enhanced nutrition for cows producing 5-10 liters daily, supporting higher milk yield requirements.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+            <!-- Poultry Products -->
+            <div class="product-category" id="poultry" style="display: none;">
+                <h2 class="category-title">Poultry Nutrition & Supplements</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&q=80" alt="NARSING Broiler Feed">
+                        <div class="product-info">
+                            <span class="product-badge">BIS Type I</span>
+                            <h3>NARSING Poultry Broiler Feed</h3>
+                            <p class="product-description">DDGS-based feed for broilers maximizing growth.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-percentage"></i> 22% CP, 2900 kcal/kg</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 100-200 g per bird</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Rapid growth support</li>
+                                <li>Feed efficiency optimization</li>
+                                <li>Environmental sustainability</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1569288052389-dac9b01c9c05?w=800&q=80" alt="NARSING Layer Feed">
+                        <div class="product-info">
+                            <span class="product-badge">BIS Type II</span>
+                            <h3>NARSING Poultry Layer Feed</h3>
+                            <p class="product-description">DDGS-based feed for layer hens optimizing egg production.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-percentage"></i> 18% CP, 2700 kcal/kg</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 120-150 g daily</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Consistent egg production</li>
+                                <li>High calcium for shells</li>
+                                <li>Optimal energy balance</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80" alt="NARSING Lactating Cow Feed (10-20L)">
-                    <div class="product-info">
-                        <h3>NARSING Lactating Cow Feed (10-20L)</h3>
-                        <p>High-performance feed for productive cows yielding 10-20 liters daily with advanced nutritional profile.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+            <!-- Veterinary Products -->
+            <div class="product-category" id="veterinary" style="display: none;">
+                <h2 class="category-title">Veterinary Medicines & Care</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1605779337669-bd1c24e6417c?w=800&q=80" alt="NARSING Mastitis Prevention">
+                        <div class="product-info">
+                            <span class="product-badge">Preventive Care</span>
+                            <h3>NARSING Mastitis Prevention Formula</h3>
+                            <p class="product-description">Advanced supplement to prevent mastitis and maintain udder health.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-shield-alt"></i> Vitamin E & Selenium</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 50-100 g daily</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Reduces udder inflammation</li>
+                                <li>Immune response support</li>
+                                <li>Improves milk quality</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=800&q=80" alt="NARSING Premium Lactating Cow Feed (20L+)">
-                    <div class="product-info">
-                        <h3>NARSING Premium Lactating Cow Feed (20L+)</h3>
-                        <p>Premium formulation for high-yielding cows producing over 20 liters daily, maximum nutrition support.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80" alt="NARSING Oral Dewormer">
+                        <div class="product-info">
+                            <span class="product-badge">Oral Medicine</span>
+                            <h3>NARSING Oral Dewormer</h3>
+                            <p class="product-description">Broad-spectrum deworming treatment for cattle, buffaloes, and goats.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-pills"></i> Albendazole & Levamisole</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 5-10 mg/kg BW</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Effective against all worms</li>
+                                <li>Improves weight gain</li>
+                                <li>Safe for lactating animals</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&q=80" alt="NARSING Murrah Milk Booster Supplement">
-                    <div class="product-info">
-                        <h3>NARSING Murrah Milk Booster Supplement</h3>
-                        <p>Specialized supplement for Murrah buffaloes to enhance milk production and quality.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1579165466741-7f35e4755660?w=800&q=80" alt="NARSING Injectable Antibiotic">
+                        <div class="product-info">
+                            <span class="product-badge">Injectable</span>
+                            <h3>NARSING Injectable Antibiotic</h3>
+                            <p class="product-description">Ceftriaxone + Sulbactam for respiratory and udder infections.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-syringe"></i> 3g + 1.5g per vial</div>
+                                <div class="spec"><i class="fas fa-weight"></i> 5-10 mg/kg IM/IV</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Combats resistant bacteria</li>
+                                <li>Fast-acting formula</li>
+                                <li>Minimal tissue irritation</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1573341830496-e0b659545af8?w=800&q=80" alt="NARSING Banni Buffalo Special Feed">
-                    <div class="product-info">
-                        <h3>NARSING Banni Buffalo Special Feed</h3>
-                        <p>Tailored nutrition for Banni buffaloes, supporting their unique dietary requirements.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1552228369-35f9d8fa5371?w=800&q=80" alt="NARSING Jaffrabadi Buffalo Special Feed">
-                    <div class="product-info">
-                        <h3>NARSING Jaffrabadi Buffalo Special Feed</h3>
-                        <p>Premium feed formulated specifically for Jaffrabadi buffaloes' nutritional needs.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1605779337669-bd1c24e6417c?w=800&q=80" alt="NARSING Mastitis Prevention Formula">
-                    <div class="product-info">
-                        <h3>NARSING Mastitis Prevention Formula</h3>
-                        <p>Advanced supplement to prevent mastitis and maintain udder health in dairy animals.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?w=800&q=80" alt="NARSING Growth Supplement">
-                    <div class="product-info">
-                        <h3>NARSING Kid/Heifer Growth Supplement</h3>
-                        <p>Essential nutrients for optimal growth and development of young animals.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80" alt="NARSING Oral Veterinary Medicine">
-                    <div class="product-info">
-                        <h3>NARSING Oral Veterinary Medicine</h3>
-                        <p>Comprehensive range of oral medications for various cattle and buffalo health conditions.</p>
-                        <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80" alt="NARSING Hoof Care">
+                        <div class="product-info">
+                            <span class="product-badge">Topical</span>
+                            <h3>NARSING Hoof Care Spray</h3>
+                            <p class="product-description">Topical spray preventing lameness and hoof infections.</p>
+                            <div class="product-specs">
+                                <div class="spec"><i class="fas fa-spray-can"></i> Copper sulfate & Neem</div>
+                                <div class="spec"><i class="fas fa-calendar"></i> Daily application</div>
+                            </div>
+                            <ul class="product-benefits">
+                                <li>Treats foot rot</li>
+                                <li>Antiseptic action</li>
+                                <li>Improves mobility</li>
+                            </ul>
+                            <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -157,19 +468,30 @@
                         <label for="product">Product of Interest</label>
                         <select name="product" id="product" required>
                             <option value="">Select a product</option>
-                            <option value="jersey-heifer-feed">NARSING Jersey Heifer Feed</option>
-                            <option value="holstein-heifer-feed">NARSING Holstein Friesian Heifer Feed</option>
-                            <option value="lactating-1-5l">NARSING Lactating Cow Feed (1-5L)</option>
-                            <option value="lactating-5-10l">NARSING Lactating Cow Feed (5-10L)</option>
-                            <option value="lactating-10-20l">NARSING Lactating Cow Feed (10-20L)</option>
-                            <option value="lactating-20l-plus">NARSING Premium Lactating Cow Feed (20L+)</option>
-                            <option value="murrah-supplement">NARSING Murrah Milk Booster Supplement</option>
-                            <option value="banni-feed">NARSING Banni Buffalo Special Feed</option>
-                            <option value="jaffrabadi-feed">NARSING Jaffrabadi Buffalo Special Feed</option>
-                            <option value="mastitis-prevention">NARSING Mastitis Prevention Formula</option>
-                            <option value="growth-supplement">NARSING Growth Supplement</option>
-                            <option value="oral-medicine">NARSING Oral Veterinary Medicine</option>
-                            <option value="other">Other</option>
+                            <optgroup label="Cattle Feed">
+                                <option value="jersey-heifer">Jersey Heifer Feed</option>
+                                <option value="holstein-heifer">Holstein Friesian Heifer Feed</option>
+                                <option value="lactating-1-5l">Lactating Cow Feed (1-5L)</option>
+                                <option value="lactating-5-10l">Lactating Cow Feed (5-10L)</option>
+                                <option value="lactating-10-20l">Lactating Cow Feed (10-20L)</option>
+                                <option value="lactating-20l-plus">Premium Lactating Cow Feed (20L+)</option>
+                            </optgroup>
+                            <optgroup label="Buffalo Feed">
+                                <option value="murrah-supplement">Murrah Milk Booster</option>
+                                <option value="jaffrabadi-feed">Jaffrabadi Buffalo Feed</option>
+                            </optgroup>
+                            <optgroup label="Goat Feed">
+                                <option value="goat-meat-feed">Goat Meat & Marbling Feed</option>
+                            </optgroup>
+                            <optgroup label="Poultry Feed">
+                                <option value="broiler-feed">Poultry Broiler Feed</option>
+                                <option value="layer-feed">Poultry Layer Feed</option>
+                            </optgroup>
+                            <optgroup label="Veterinary">
+                                <option value="mastitis-prevention">Mastitis Prevention Formula</option>
+                                <option value="oral-dewormer">Oral Dewormer</option>
+                                <option value="injectable-antibiotic">Injectable Antibiotic</option>
+                            </optgroup>
                         </select>
                     </div>
                     <div class="form-group">
@@ -229,5 +551,22 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Product category switching
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Hide all categories
+                document.querySelectorAll('.product-category').forEach(cat => cat.style.display = 'none');
+                // Show selected category
+                const categoryId = this.getAttribute('data-category');
+                document.getElementById(categoryId).style.display = 'block';
+            });
+        });
+    </script>
 </body>
 </html>
