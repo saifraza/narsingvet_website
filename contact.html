@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NARSING</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">NARSING</div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="farmers.html">For Farmers</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2>Get in Touch</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select name="subject" id="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="product-inquiry">Product Inquiry</option>
+                                <option value="dairy-setup">Dairy Setup Consultation</option>
+                                <option value="veterinary-service">Veterinary Service</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="export-inquiry">Export/International Trade</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Please provide details about your inquiry" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-item">
+                        <h4>Primary Contact</h4>
+                        <p><strong>Dr. Rajan Dubey</strong></p>
+                        <p>Phone: <a href="tel:9713124111">9713124111</a></p>
+                        <p><em>(For commercial work only)</em></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Address</h4>
+                        <p>NARSING</p>
+                        <p>Narsinghpur, Madhya Pradesh</p>
+                        <p>India</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Business Hours</h4>
+                        <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Service Areas</h4>
+                        <p>Narsinghpur, Seoni, Chhindwara, and Mahakaushal regions of Madhya Pradesh</p>
+                    </div>
+
+                    <div class="map-container">
+                        <p>Map showing Narsinghpur, Seoni, Chhindwara, and Mahakaushal regions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" style="background-color: var(--light-bg);">
+        <div class="container">
+            <h2>Request a Quote</h2>
+            <p class="section-subtitle">Need pricing information for our products? Fill out the form below for a custom quote.</p>
+            
+            <div class="contact-form" style="max-width: 800px; margin: 0 auto;">
+                <form>
+                    <div class="form-group">
+                        <label for="quote-product">Products of Interest</label>
+                        <textarea name="quote-product" id="quote-product" placeholder="List the products you're interested in" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-quantity">Estimated Quantity</label>
+                        <input type="text" name="quote-quantity" id="quote-quantity" placeholder="e.g., 500 kg per month" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-location">Delivery Location</label>
+                        <input type="text" name="quote-location" id="quote-location" placeholder="City, State, Country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-name">Contact Person</label>
+                        <input type="text" name="quote-name" id="quote-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-phone">Phone Number</label>
+                        <input type="tel" name="quote-phone" id="quote-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-email">Email Address</label>
+                        <input type="email" name="quote-email" id="quote-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-type">Customer Type</label>
+                        <select name="quote-type" id="quote-type" required>
+                            <option value="">Select customer type</option>
+                            <option value="farmer">Individual Farmer</option>
+                            <option value="dairy-farm">Dairy Farm</option>
+                            <option value="distributor">Distributor</option>
+                            <option value="international">International Buyer</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Request Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="farmers.html">For Farmers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Dr. Rajan Dubey</p>
+                    <p>Phone: 9713124111</p>
+                    <p>NARSING, Narsinghpur, Madhya Pradesh</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NARSING. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
