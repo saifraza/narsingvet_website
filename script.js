@@ -122,13 +122,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Parallax effect for hero
-    const hero = document.querySelector('.hero');
-    if (hero) {
+    // Parallax effect for hero video
+    const heroVideo = document.querySelector('.hero-video');
+    if (heroVideo) {
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
-            const parallax = -scrolled * 0.5;
-            hero.style.backgroundPositionY = parallax + 'px';
+            const speed = 0.5;
+            heroVideo.style.transform = `translate(-50%, ${-50 + scrolled * speed}px) scale(1.1)`;
         });
     }
 
